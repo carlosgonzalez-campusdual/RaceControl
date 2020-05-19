@@ -1,0 +1,127 @@
+<garaje>
+<escuderia>    
+    <coche>
+        <marca>Ferrari</marca>
+        <modelo>360 Modena</modelo>
+        <velocidad>300</velocidad>
+    </coche>
+    <coche>
+        <marca>Ferrari</marca>
+        <modelo>F40</modelo>
+        <velocidad>300</velocidad>
+    </coche>
+    <coche>
+        <marca>Ferrari</marca>
+        <modelo>F50</modelo>
+        <velocidad>300</velocidad>
+    </coche>
+    <coche>
+        <marca>Ferrari</marca>
+        <modelo>Enzo</modelo>
+        <velocidad>300</velocidad>
+    </coche>
+    <coche>
+        <marca>Ferrari</marca>
+        <modelo>812</modelo>
+        <velocidad>300</velocidad>
+    </coche>
+    <coche>
+        <marca>Ferrari</marca>
+        <modelo>FXX</modelo>
+        <velocidad>300</velocidad>
+    </coche>
+    <nombre_escuderia>Ferrari TEAM</nombre_escuderia>
+</escuderia>
+<escuderia>   
+    <coche>
+        <marca>McLaren</marca>
+        <modelo>F1</modelo>
+        <velocidad>300</velocidad>
+    </coche>
+    <coche>
+        <marca>McLaren</marca>
+        <modelo>Senna</modelo>
+        <velocidad>300</velocidad>
+    </coche>
+    <coche>
+        <marca>McLaren</marca>
+        <modelo>720S</modelo>
+        <velocidad>300</velocidad>
+    </coche>
+    <nombre_escuderia>RACER McLaren</nombre_escuderia>
+</escuderia>
+<escuderia>    
+    <coche>
+        <marca>Mercedes</marca>
+        <modelo>CLK GTR</modelo>
+        <velocidad>300</velocidad>
+    </coche>
+    <coche>
+        <marca>Mercedes</marca>
+        <modelo>190E</modelo>
+        <velocidad>300</velocidad>
+    </coche>
+    <coche>
+        <marca>Mercedes</marca>
+        <modelo>AMG GT3</modelo>
+        <velocidad>300</velocidad>
+    </coche>
+    <coche>
+        <marca>Mercedes</marca>
+        <modelo>C DTM</modelo>
+        <velocidad>300</velocidad>
+    </coche>
+    <nombre_escuderia>Mercedes Wettbewerb</nombre_escuderia>
+</escuderia>
+<escuderia>    
+    <coche>
+        <marca>Porsche</marca>
+        <modelo>Carrera GT</modelo>
+        <velocidad>300</velocidad>
+    </coche>
+    <coche>
+        <marca>Porsche</marca>
+        <modelo>GT2 RS</modelo>
+        <velocidad>300</velocidad>
+    </coche>
+   <coche>    
+        <marca>Porsche</marca>
+        <modelo>GT3 RS</modelo>
+        <velocidad>300</velocidad> 
+    </coche>   
+    <coche>    
+        <marca>Porsche</marca>
+        <modelo>911 RSR</modelo>
+        <velocidad>300</velocidad> 
+    </coche>  
+    <nombre_escuderia>Prosche SuperCup</nombre_escuderia>   
+</escuderia>
+<escuderia>    
+    <coche>    
+        <marca>Lamborghini</marca>
+        <modelo>Huracan Supertrofeo EVO</modelo>
+        <velocidad>300</velocidad> 
+    </coche>  
+    <coche>    
+        <marca>Lamborghini</marca>
+        <modelo>Huracan Supertrofeo EVO</modelo>
+        <velocidad>300</velocidad> 
+    </coche>  
+    <coche>    
+        <marca>Lamborghini</marca>
+        <modelo>Aventador</modelo>
+        <velocidad>300</velocidad> 
+    </coche>
+    <coche>    
+        <marca>Lamborghini</marca>
+        <modelo>Veneno</modelo>
+        <velocidad>300</velocidad> 
+    </coche>  
+    <coche>    
+        <marca>Lamborghini</marca>
+        <modelo>Centenario</modelo>
+        <velocidad>300</velocidad> 
+    </coche>  
+    <nombre_escuderia>Lamborghini Concorrenza</nombre_escuderia>
+</escuderia>
+</garaje>

@@ -1,0 +1,7 @@
+<garaje>
+    <coches>
+        <marca>BMW</marca>
+        <modelo>M4</modelo>
+        <velocidad>300</velocidad>
+    </coches>
+</garaje>

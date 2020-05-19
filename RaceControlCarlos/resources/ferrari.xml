@@ -1,0 +1,33 @@
+<garaje>
+    <coche>
+        <marca>Ferrari</marca>
+        <modelo>360 Modena</modelo>
+        <velocidad>300</velocidad>
+    </coche>
+    <coche>
+        <marca>Ferrari</marca>
+        <modelo>F40</modelo>
+        <velocidad>300</velocidad>
+    </coche>
+    <coche>
+        <marca>Ferrari</marca>
+        <modelo>F50</modelo>
+        <velocidad>300</velocidad>
+    </coche>
+    <coche>
+        <marca>Ferrari</marca>
+        <modelo>Enzo</modelo>
+        <velocidad>300</velocidad>
+    </coche>
+    <coche>
+        <marca>Ferrari</marca>
+        <modelo>812</modelo>
+        <velocidad>300</velocidad>
+    </coche>
+    <coche>
+        <marca>Ferrari</marca>
+        <modelo>FXX</modelo>
+        <velocidad>300</velocidad>
+    </coche>
+    <nombre_garaje>Ferrari TEAM</nombre_garaje>
+</garaje>
