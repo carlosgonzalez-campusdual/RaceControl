@@ -9,75 +9,63 @@ public abstract class Carrera {
 	private String nombrePremio;
 	private Garaje garajeCarrera;
 	protected List<Garaje> garajesParticipantes;
-    protected List<Coche> listaCoches;
+	protected List<Coche> listaCoches;
 	protected int duracion;
-	protected Podio podio; 
-	
+	protected Podio podio;
+	protected int vueltaActual;
 
-	
+	protected abstract List<Coche> vuelta();
 
 	public Carrera(String nombrePremio, int duracion) {
+		this.vueltaActual = 1;
 		this.nombrePremio = nombrePremio;
 		this.duracion = duracion;
 		this.garajesParticipantes = new ArrayList<Garaje>();
 		this.listaCoches = new ArrayList<Coche>();
 	}
-	
+
 	public String toString() {
-        return "Nombre del Premio : " + nombrePremio + "\n\t" +
-                "Duracion: " + duracion + "\n\t" +
-                "Garajes: " + garajeCarrera.toString() + "\n\t" +
-                "Coches: " + listaCoches.toString() + "\n\t";
-    }
-	
-	 public Carrera (String nombrePremio, int duracion, List<Coche> listaCoches) {
-	        this(nombrePremio,duracion);
-	        this.listaCoches.addAll(listaCoches);
-	    }
-	 
-	 public void setGaraje(List<Garaje> garajesParticipantes) {
-	        this.garajesParticipantes.addAll(garajesParticipantes);
-	    }
+		return "Nombre del Premio : " + nombrePremio + "\n\t" + "Duracion: " + duracion + "\n\t" + "Coches: "
+				+ listaCoches.toString() + "\n\t";
+	}
 
-	    public void setCars(List<Coche> listaCoches) {
-	        this.listaCoches.addAll(listaCoches);
-	    }
-	    
-	    private Comparator compareByOdometer = new Comparator<Coche>() {
-	        public int compare(Coche coche1, Coche coche2) {
-	            return (int) ((coche1.getVelocidadMedia() +coche2.getVelocidadMedia()));
-	            
-	            
-	         
-	        
-	        }
-	    };
-	    
-	    
-	    protected void ordenarMedia() {
-	     Collections.sort(listaCoches,compareByOdometer);
-	        
-	      
-	        
-	       
-	    }
-	    
-	    
-	    
-	    protected void setMediaVelocidad() {
-	        for(Coche coche : listaCoches) {
-	        	coche.getVelocidadMedia();
-	        }
-	    }
-	    
-	    public abstract Podio correrCarrera();
+	public Carrera(String nombrePremio, int duracion, List<Coche> listaCoches) {
+		this(nombrePremio, duracion);
+		this.listaCoches.addAll(listaCoches);
+	}
 
-	    
-	 
-	 
+	public void setGaraje(List<Garaje> garajesParticipantes) {
+		this.garajesParticipantes.addAll(garajesParticipantes);
+	}
 
-	
-	
+	public void setCoches(List<Coche> listaCoches) {
+		this.listaCoches.addAll(listaCoches);
+	}
+
+	private Comparator compararContador = new Comparator<Coche>() {
+		public int compare(Coche coche1, Coche coche2) {
+			return (int) ((coche1.getContador() + coche2.getContador()));
+
+		}
+	};
+
+	protected void ordenarCoches() {
+		Collections.sort(listaCoches, compararContador);
+
+	}
+
+	protected void setMediaVelocidad() {
+		for (Coche coche : listaCoches) {
+			coche.distancias();
+		}
+	}
+
+	public abstract Podio correrCarrera();
+
+	public int getTotalVueltas() {
+		return this.vueltaActual;
+	}
+
 //	public double pasarMedia() {
 //		List<Double> velocidades = new ArrayList<Double>();
 //		double velocidadAleatoria;
@@ -109,5 +97,4 @@ public abstract class Carrera {
 //		return aceleracionFrenanda;
 //	}
 
-	
 }

@@ -20,7 +20,7 @@ public class Torneo {
 		this.puntuacionCoches = new ArrayList<Puntuacion>();
 		this.puntuacionCoches = resetPuntuacion(this.coches);
 		for (Carrera carrera : this.carreras) {
-			carrera.setCars(coches);
+			carrera.setCoches(coches);
 		}
 	}
 
@@ -82,7 +82,7 @@ public class Torneo {
 	public List<Puntuacion> resetPuntuacion(List<Coche> coches) {
 		for (Coche coche : coches) {
 			Puntuacion puntuacionCoches = new Puntuacion();
-			puntuacionCoches.setCoche(coche);;
+			puntuacionCoches.setCoche(coche);
 			puntuacionCoches.setPuntuacion(0);
 			this.puntuacionCoches.add(puntuacionCoches);
 		}

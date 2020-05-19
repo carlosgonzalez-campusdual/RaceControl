@@ -9,7 +9,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Garaje {
 
 	private String nombreGaraje;
-	// private Coche coche;
 	private List<Coche> coches;
 
 	public Garaje() {
@@ -36,9 +35,10 @@ public class Garaje {
 	}
 
 	@Override
-	public String toString() {
-		return "Nombre de garaje: " + nombreGaraje + "\n" + coches.toString();
-	}
+	 public String toString() {
+        return  nombreGaraje + "\n" +
+                coches.toString() + "\n";
+    }
 
 //	public Coche getCoche() {
 //		return coche;

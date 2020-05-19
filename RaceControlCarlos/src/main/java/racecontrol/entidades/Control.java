@@ -14,20 +14,31 @@ public class Control {
 	}
 	
 	public Carrera crearCarrera() throws JAXBException {
+		
+		
 		Garaje ferrari = ObtenerDatosCoche.convertirObjeto("ferrari");
 		ferrari.setNombreGaraje(ferrari.getNombreGaraje());
 		
+		Garaje bmw = ObtenerDatosCoche.convertirObjeto("BMW");
+		bmw.setNombreGaraje(bmw.getNombreGaraje());
+		
 		System.out.println(ferrari.getNombreGaraje());
+		
+		System.out.println(bmw.getNombreGaraje());
 		
 		List<Garaje> riasTeams = new ArrayList<Garaje>();
 		riasTeams.add(ferrari);
+		//riasTeams.add(bmw);
+		//Carrera estandar1 = new CarreraEstandar("estandar1", 2, 3);
 		
-		Carrera eliminacion1 = new CarreraEliminacion("eliminacion1", 20);
-//		Carrera estandar1 = new CarreraEstandar("estandar1", 20, 3);
+		Carrera eliminacion1 = new CarreraEliminacion("eliminacion1", 2);
 		
 		List<Carrera> riasTournamentRaces = new ArrayList<Carrera>();
-//		riasTournamentRaces.add(estandar1);
-		//riasTournamentRaces.add(eliminacion1);
+		//riasTournamentRaces.add(estandar1);
+		
+		
+		riasTournamentRaces.add(eliminacion1);
+		
 		
 		Torneo riasTorneo = new Torneo("Torneo Rias", riasTeams, riasTournamentRaces);
 		

@@ -1,15 +1,12 @@
 package racecontrol;
 
-
-import java.io.IOException;
-
 import javax.xml.bind.JAXBException;
 
 import racecontrol.entidades.Control;
 
 public class Principal {
 
-	public static void main(String[] args) throws JAXBException, IOException {
+	public static void main(String[] args) throws JAXBException  {
 		
 		
 //		ObtenerDatosCoche obtenerDatos = new ObtenerDatosCoche();
@@ -35,7 +32,7 @@ public class Principal {
 //		
 //		m.menu();
 		
-		
+//		
 		Control c = new Control();
 		
 		c.testCarrera();
